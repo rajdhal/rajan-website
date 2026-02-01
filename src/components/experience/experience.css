@@ -1,0 +1,113 @@
+.experience_container {
+    max-width: 800px;
+}
+
+.experience_card {
+    background-color: var(--container-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.experience_header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.experience_company {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+
+.experience_type {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+.experience_location {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+.experience_roles {
+    padding-left: 0.5rem;
+}
+
+.experience_role {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience_role:last-child {
+    margin-bottom: 0;
+}
+
+.experience_timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.25rem;
+}
+
+.experience_dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.experience_line {
+    width: 2px;
+    flex-grow: 1;
+    background-color: var(--text-color);
+    margin-top: 0.5rem;
+}
+
+.experience_content {
+    flex: 1;
+}
+
+.experience_title {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+
+.experience_period {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.experience_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.experience_skill {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: var(--smaller-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 576px) {
+    .experience_card {
+        padding: 1rem;
+    }
+
+    .experience_company {
+        font-size: var(--h3-font-size);
+    }
+}

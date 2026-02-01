@@ -16,13 +16,29 @@
 }
 
 .home_social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: #fff;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .home_social-icon:hover {
-  color: var(--title-color-dark);
-  scale: 1.1;
+  background-color: hsl(0, 0%, 0%);
+  transform: scale(1.1);
+}
+
+body.dark-theme .home_social-icon {
+  background-color: hsl(0, 0%, 30%);
+}
+
+body.dark-theme .home_social-icon:hover {
+  background-color: hsl(0, 0%, 50%);
 }
 
 .home_title {
@@ -65,7 +81,7 @@
 }
 
 .home_img {
-  background: url(../../assets/ChatGPT\ Image\ Jan\ 31,\ 2026,\ 11_06_32\ PM.png);
+  background: url(../../assets/pixel\ rajan.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -73,8 +89,9 @@
   justify-self: center;
   width: 400px;
   height: 400px;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   box-shadow: inset 0 0 0 5px rgb(225 225 225 / 30%);
-  animation: profile__animate 9s ease-in-out infinite 1s;
+  animation: profile__animate 9s ease-in-out infinite;
 }
 
 @keyframes profile__animate {

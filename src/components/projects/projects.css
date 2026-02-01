@@ -8,18 +8,19 @@
 
 .filter_btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
+  border: 1px solid var(--text-color);
+  background-color: var(--container-color);
+  color: var(--text-color);
   border-radius: 999px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .filter_btn.active,
 .filter_btn:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--title-color);
+  color: var(--container-color);
 }
 
 .projects_grid {
@@ -31,7 +32,7 @@
 
 .project_card {
   cursor: pointer;
-  background: white;
+  background: var(--container-color);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -49,12 +50,13 @@
   justify-content: center;
   align-items: center;
   height: 250px;
-  background: #f9f9f9;
+  background: var(--body-color);
 }
 
 .project_image {
   width: 100%;
-  height: 250px; /* or any fixed height you want */
+  height: 250px;
+  /* or any fixed height you want */
   object-fit: cover;
   object-position: center;
   display: block;
@@ -67,11 +69,12 @@
 .project_info h3 {
   margin: 0.5rem 0;
   font-size: 1.2rem;
+  color: var(--title-color);
 }
 
 .project_info p {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--text-color);
 }
 
 .project_tags {
@@ -82,7 +85,8 @@
 }
 
 .tag {
-  background: #eee;
+  background: var(--body-color);
+  color: var(--text-color);
   padding: 0.2rem 0.6rem;
   font-size: 0.75rem;
   border-radius: 999px;

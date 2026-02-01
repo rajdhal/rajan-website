@@ -51,6 +51,15 @@
   --z-modal: 1000;
 }
 
+/*========== Dark Theme ==========*/
+body.dark-theme {
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 70%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 16%);
+}
+
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -204,8 +213,7 @@ img {
   }
 }
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 576px) {}
 
 /* For small devices */
 @media screen and (max-width: 350px) {

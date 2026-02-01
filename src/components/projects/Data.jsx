@@ -1,6 +1,5 @@
-// Placeholder images - replace with actual project screenshots
-import image1 from "../../assets/circle.png"; // Placeholder for trOCR
-import image2 from "../../assets/circle.png"; // Placeholder for Notetake
+import image1 from "../../assets/trOCR.png";
+import image2 from "../../assets/Notetake.png";
 
 export const projects = [
   {

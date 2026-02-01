@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./about.css";
-import ProfileImage from "../../assets/ChatGPT Image Jan 31, 2026, 11_06_32 PM.png";
+import ProfileImage from "../../assets/me.JPEG";
 import Info from "./Info";
 import Resume from "../../assets/Rajan Resume.pdf";
 

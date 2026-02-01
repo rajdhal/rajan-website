@@ -21,6 +21,21 @@ const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
+  /*=============== Dark Mode ===============*/
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved === "true";
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
   const handleNavClick = (sectionId) => {
     setActiveNav(sectionId);
     showMenu(false); // Close the menu on mobile
@@ -74,6 +89,18 @@ const Header = () => {
               </a>
             </li>
 
+            <li className="nav_item" key="experience">
+              <a
+                href="#experience"
+                onClick={() => handleNavClick("#experience")}
+                className={
+                  activeNav === "#experience" ? "nav_link active-link" : "nav_link"
+                }
+              >
+                <i className="uil uil-briefcase-alt nav_icon"></i> Experience
+              </a>
+            </li>
+
             <li className="nav_item" key="projects">
               <a
                 href="#projects"
@@ -109,6 +136,10 @@ const Header = () => {
 
         <div className="nav_toggle" onClick={() => showMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
+        </div>
+
+        <div className="nav_theme" onClick={() => setDarkMode(!darkMode)}>
+          <i className={darkMode ? "uil uil-sun" : "uil uil-moon"}></i>
         </div>
       </nav>
     </header>
