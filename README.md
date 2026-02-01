@@ -1,47 +1,50 @@
 # Rajan Dhaliwal - Portfolio
 
-Personal portfolio website showcasing my work as a Software Engineer at Infor.
+Software Engineer at Infor | University of Windsor CS Honours Graduate | Open Source Enthusiast
 
 ## 🚀 Live Site
 
 [rajand.xyz](https://rajand.xyz)
 
-## 🛠️ Tech Stack
+## About
 
-- React 19
-- CSS with custom animations
-- EmailJS for contact form
-- GitHub Pages deployment
+I'm a software engineer passionate about building scalable systems and contributing to open source. Currently working at Infor on enterprise workforce management solutions, with experience in microservices, cloud infrastructure, and ML pipelines.
+
+## Tech Stack
+
+**Languages:** Java, Kotlin, Python, JavaScript, SQL
+
+**Backend:** Spring Boot, Node.js, Django, REST APIs
+
+**Frontend:** React, Angular
+
+**Data:** PostgreSQL, Oracle, PyTorch, Pandas
+
+**Cloud & DevOps:** AWS, Kubernetes, Docker, GitLab CI/CD
 
 ## Featured Projects
 
-### trOCR - Sign-In Sheet Recognizer
-University of Windsor SmartCampus text recognition using custom trOCR and YOLO object detection with a Gradio web interface.
+### AI Data Processing Platform
+End-to-end ML solution for automating handwritten data recognition with 95%+ accuracy, built in partnership with University of Windsor.
 
-**Tech:** Python, trOCR, YOLO, Gradio, Machine Learning
+**Tech:** Python, YOLOv8, trOCR, PyTorch, Gradio
 
 [View Project](https://github.com/rajdhal/trOCR)
 
 ### Notetake
-Django web app for uploading and sharing class-specific documents with user authentication, inline PDF viewing, and RESTful API.
+Django web app for uploading and sharing class documents with user authentication, inline PDF viewing, and RESTful API.
 
-**Tech:** Python, Django, REST API
+**Tech:** Python, Django, REST API, PostgreSQL
 
 [View Project](https://github.com/rajdhal/Notetake)
 
 ## Local Development
 
 ```bash
-git clone https://github.com/rajdhal/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/rajdhal/rajan-website.git
+cd rajan-website
 npm install
 npm start
-```
-
-## Deployment
-
-```bash
-npm run deploy
 ```
 
 ## Contact

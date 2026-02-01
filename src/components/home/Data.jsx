@@ -7,8 +7,8 @@ const Data = () => {
 
       <h3 className="home_subtitle">Software Engineer at Infor</h3>
       <p className="home_description">
-        Software engineer passionate about building impactful solutions and
-        turning ideas into reality.
+        Software engineer who loves building open source tools and turning
+        ideas into impactful solutions.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hi!

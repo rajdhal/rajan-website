@@ -6,7 +6,31 @@ const Frameworks = () => {
       <h3 className="skills_title">Frameworks</h3>
 
       <div className="skills_box">
-        {/* Frontend Frameworks */}
+        <div className="skills_group">
+          <h4 className="skills_subtitle">Backend</h4>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Spring Boot</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Node.js</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Django</h3>
+            </div>
+          </div>
+        </div>
+
         <div className="skills_group">
           <h4 className="skills_subtitle">Frontend</h4>
 
@@ -20,32 +44,7 @@ const Frameworks = () => {
           <div className="skills_data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills_name">Next.js</h3>
-            </div>
-          </div>
-
-          <div className="skills_data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills_name">Expo Go</h3>
-            </div>
-          </div>
-        </div>
-
-        {/* Backend Frameworks */}
-        <div className="skills_group">
-          <h4 className="skills_subtitle">Backend</h4>
-
-          <div className="skills_data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills_name">Nest.js</h3>
-            </div>
-          </div>
-          <div className="skills_data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills_name">Expo Router</h3>
+              <h3 className="skills_name">Angular</h3>
             </div>
           </div>
         </div>
