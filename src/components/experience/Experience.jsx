@@ -60,8 +60,8 @@ const calculateDuration = (startDate, endDate) => {
     const start = parseDate(startDate);
     const end = parseDate(endDate);
 
-    let months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
-    if (endDate === "Present") months += 1;
+    // Calculate months difference and add 1 to make it inclusive of both start and end months
+    let months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth()) + 1;
 
     const years = Math.floor(months / 12);
     const remainingMonths = months % 12;

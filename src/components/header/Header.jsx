@@ -35,8 +35,10 @@ const Header = () => {
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("dark-theme");
+      document.documentElement.style.backgroundColor = "hsl(0, 0%, 10%)";
     } else {
       document.body.classList.remove("dark-theme");
+      document.documentElement.style.backgroundColor = "hsl(0, 0%, 98%)";
     }
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
