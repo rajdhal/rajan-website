@@ -3,7 +3,6 @@ import "./skills.css";
 import Languages from "./Languages";
 import Frameworks from "./Frameworks";
 import Databases from "./Databases";
-import ToolsAndPlatforms from "./ToolsAndPlatforms";
 
 const Skills = () => {
   return (
@@ -14,7 +13,6 @@ const Skills = () => {
         <div className="reveal-left"><Languages /></div>
         <div className="reveal-right"><Frameworks /></div>
         <div className="reveal-left"><Databases /></div>
-        <div className="reveal-right"><ToolsAndPlatforms /></div>
       </div>
     </section>
   );

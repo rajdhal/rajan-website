@@ -29,6 +29,13 @@ const Frameworks = () => {
               <h3 className="skills_name">Django</h3>
             </div>
           </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">Flask</h3>
+            </div>
+          </div>
         </div>
 
         <div className="skills_group">
@@ -45,6 +52,20 @@ const Frameworks = () => {
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills_name">Angular</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">TypeScript</h3>
+            </div>
+          </div>
+
+          <div className="skills_data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills_name">CSS</h3>
             </div>
           </div>
         </div>
