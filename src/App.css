@@ -83,6 +83,7 @@ body.dark-theme {
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 body,
@@ -96,6 +97,13 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
 }
 
 h1,

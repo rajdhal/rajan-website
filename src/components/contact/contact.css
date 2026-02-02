@@ -118,6 +118,11 @@
   resize: none;
 }
 
+.contact_form button[type="submit"] {
+  display: flex;
+  margin: 0 auto;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
