@@ -24,7 +24,12 @@ const Header = () => {
   /*=============== Dark Mode ===============*/
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
-    return saved === "true";
+    // If user has manually set a preference, use it
+    if (saved !== null) {
+      return saved === "true";
+    }
+    // Otherwise, detect system preference
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
   useEffect(() => {
