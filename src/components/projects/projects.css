@@ -25,9 +25,21 @@
 
 .projects_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .projects_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects_grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project_card {
@@ -38,11 +50,12 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
 }
 
 .project_card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .project_image_wrapper {

@@ -1,7 +1,18 @@
 import image1 from "../../assets/trOCR.png";
 import image2 from "../../assets/Notetake.png";
+import websiteLight from "../../assets/websiteLight.png";
+import websiteDark from "../../assets/websiteDark.png";
 
 export const projects = [
+  {
+    title: "Personal Portfolio",
+    image: websiteLight,
+    imageDark: websiteDark,
+    description:
+      "Modern responsive portfolio website with dark mode, built with React and deployed on GitHub Pages.",
+    tags: ["React", "JavaScript", "CSS", "GitHub Pages"],
+    link: "https://github.com/rajdhal/rajan-website",
+  },
   {
     title: "AI Data Processing Platform",
     image: image1,

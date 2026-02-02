@@ -20,10 +20,10 @@ const Info = () => {
       </div>
 
       <div className="about_box">
-        <i className="uil uil-github-alt about_icon"></i>
-        <h3 className="about_title">Open Source</h3>
+        <i className="uil uil-map-marker about_icon"></i>
+        <h3 className="about_title">Location</h3>
         <span className="about_subtitle">
-          Contributor and advocate
+          Based in Canada
         </span>
       </div>
     </div>

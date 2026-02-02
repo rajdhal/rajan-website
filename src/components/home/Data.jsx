@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Data = () => {
+  const [displayText, setDisplayText] = useState("");
+  const fullText = "Software Engineer at Infor";
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index <= fullText.length) {
+        setDisplayText(fullText.slice(0, index));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 80);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="home_data">
       <h1 className="home_title">Rajan Dhaliwal</h1>
 
-      <h3 className="home_subtitle">Software Engineer at Infor</h3>
+      <h3 className="home_subtitle">
+        {displayText}
+        <span className="typing_cursor">|</span>
+      </h3>
       <p className="home_description">
-        Software engineer who loves building open source tools and turning
-        ideas into impactful solutions.
+        Software engineer from Canada. I build open source, ship ideas, and occasionally break things.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hi!
         <svg
-          class="button_icon"
+          className="button_icon"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

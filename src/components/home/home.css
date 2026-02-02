@@ -22,23 +22,16 @@
   width: 40px;
   height: 40px;
   font-size: 1.25rem;
-  color: #fff;
-  background-color: hsl(0, 0%, 20%);
+  color: var(--container-color);
+  background-color: var(--title-color);
   border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .home_social-icon:hover {
-  background-color: hsl(0, 0%, 0%);
+  background-color: var(--title-color-dark);
   transform: scale(1.1);
-}
-
-body.dark-theme .home_social-icon {
-  background-color: hsl(0, 0%, 30%);
-}
-
-body.dark-theme .home_social-icon:hover {
-  background-color: hsl(0, 0%, 50%);
 }
 
 .home_title {
@@ -52,6 +45,24 @@ body.dark-theme .home_social-icon:hover {
   padding-left: 6rem;
   font-weight: var(--font-normal);
   margin-bottom: var(--mb-1);
+}
+
+.typing_cursor {
+  animation: blink 1s infinite;
+  font-weight: var(--font-normal);
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .home_subtitle::before {

@@ -11,6 +11,7 @@
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
+
 .contact_info {
   display: grid;
   row-gap: 1rem;
@@ -45,6 +46,16 @@
   margin-bottom: var(--mb-0-75);
 }
 
+.contact_email-btn {
+  padding: 0.75rem 1.25rem;
+  font-size: var(--small-font-size);
+}
+
+.contact_email-btn .button_icon {
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+
 .contact_button {
   color: var(--text-color);
   font-size: var(--small-font-size);
@@ -58,12 +69,15 @@
   font-size: 1rem;
   transition: 0.3s;
 }
+
 .contact_button:hover .contact_button-icon {
   transform: translateX(0.25rem);
 }
+
 .contact_form {
   width: 360px;
 }
+
 .contact_form-div {
   position: relative;
   margin-bottom: var(--mb-2);
@@ -84,6 +98,7 @@
   padding: 1.5rem;
   z-index: 1;
 }
+
 .contact_form-tag {
   position: absolute;
   top: -0.75rem;
@@ -94,12 +109,15 @@
   padding: 0.25rem;
   z-index: 10;
 }
+
 .contact_form-area {
   height: 11rem;
 }
+
 .contact_form-area textarea {
   resize: none;
 }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -118,6 +136,7 @@
   .contact_info {
     justify-content: center;
   }
+
   .contact_form {
     margin: 0 auto;
   }
@@ -127,11 +146,11 @@
   .contact_info {
     grid-template-columns: 300px;
   }
+
   .contact_form {
     width: 100%;
   }
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
-}
+@media screen and (max-width: 350px) {}

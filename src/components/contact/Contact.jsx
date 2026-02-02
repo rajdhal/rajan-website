@@ -29,19 +29,19 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section_title">Contact</h2>
-      <span className="section_subtitle">Get In Touch With Me!</span>
-      <div className="contact_container container grid">
+      <h2 className="section_title reveal">Contact</h2>
+      <span className="section_subtitle reveal">Get In Touch With Me!</span>
+      <div className="contact_container container grid reveal">
         <div className="contact_content">
           <h3 className="contact_title">Contact Info</h3>
           <div className="contact_info">
             <div className="contact_card">
-              <i className="bx bx-mail-send contact_card-icon"></i>
+              <i className="uil uil-envelope contact_card-icon"></i>
               <h3 className="contact_card-title">Email</h3>
               <span className="contact_card-data">dhaliwalrajan98@gmail.com</span>
-              <a href="mailto:dhaliwalrajan98@gmail.com" className="contact_button">
-                Write Me
-                <i className="bx bx-right-arrow-alt contact_button-icon"></i>
+              <a href="mailto:dhaliwalrajan98@gmail.com" className="button button--flex contact_email-btn">
+                Send Email
+                <i className="uil uil-message button_icon"></i>
               </a>
             </div>
           </div>

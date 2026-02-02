@@ -73,18 +73,38 @@ const About = () => {
         <div className="about_data">
           <Info />
           <p className="about_description">
-            I thrive on authenticity and innovation—whether building software or
-            exploring new ideas, I love turning curiosity into creation.{" "}
-            <a href="#projects" className="about_link">
-              Check out my projects!
-            </a>
+            I like turning ideas into working systems, contributing to open source, and learning something new with every project.
           </p>
 
-          <button onClick={openResume} className="button button--flex">
-            <span className="button-content">
-              Rajan's Resume <i className="uil uil-file-alt"></i>
-            </span>
-          </button>
+          <div className="about_buttons">
+            <button onClick={openResume} className="button button--flex">
+              <span className="button-content">
+                Rajan's Resume <i className="uil uil-file-alt"></i>
+              </span>
+            </button>
+
+            <a
+              href="https://www.linkedin.com/in/rajan-dhaliwal1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button--flex"
+            >
+              <span className="button-content">
+                LinkedIn <i className="uil uil-linkedin-alt"></i>
+              </span>
+            </a>
+
+            <a
+              href="https://github.com/rajdhal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button--flex"
+            >
+              <span className="button-content">
+                GitHub <i className="uil uil-github-alt"></i>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
 

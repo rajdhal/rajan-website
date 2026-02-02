@@ -9,14 +9,14 @@ const experiences = [
         roles: [
             {
                 title: "Software Engineer",
-                period: "Jun 2025 - Present",
-                duration: "9 mos",
+                startDate: "Jun 2025",
+                endDate: "Present",
                 skills: ["Java", "Spring Boot", "AWS", "Kubernetes", "Docker", "REST APIs", "Microservices", "PostgreSQL", "Git"],
             },
             {
                 title: "Associate Software Engineer",
-                period: "Apr 2024 - Jun 2025",
-                duration: "1 yr 3 mos",
+                startDate: "Apr 2024",
+                endDate: "Jun 2025",
                 skills: ["Amazon Web Services (AWS)", "Kubernetes"],
             },
         ],
@@ -28,8 +28,8 @@ const experiences = [
         roles: [
             {
                 title: "Teaching Assistant",
-                period: "Sep 2023 - Dec 2023",
-                duration: "4 mos",
+                startDate: "Sep 2023",
+                endDate: "Dec 2023",
                 skills: [],
             },
         ],
@@ -41,23 +41,49 @@ const experiences = [
         roles: [
             {
                 title: "Sales Advisor",
-                period: "Oct 2021 - Aug 2022",
-                duration: "11 mos",
+                startDate: "Oct 2021",
+                endDate: "Aug 2022",
                 skills: [],
             },
         ],
     },
 ];
 
+const calculateDuration = (startDate, endDate) => {
+    const parseDate = (dateStr) => {
+        if (dateStr === "Present") return new Date();
+        const [month, year] = dateStr.split(" ");
+        const monthIndex = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].indexOf(month);
+        return new Date(parseInt(year), monthIndex);
+    };
+
+    const start = parseDate(startDate);
+    const end = parseDate(endDate);
+
+    let months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+    if (endDate === "Present") months += 1;
+
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+
+    if (years > 0 && remainingMonths > 0) {
+        return `${years} yr ${remainingMonths} mos`;
+    } else if (years > 0) {
+        return `${years} yr`;
+    } else {
+        return `${remainingMonths} mos`;
+    }
+};
+
 const Experience = () => {
     return (
         <section className="experience section" id="experience">
-            <h2 className="section_title">Experience</h2>
-            <span className="section_subtitle">My Professional Journey</span>
+            <h2 className="section_title reveal">Experience</h2>
+            <span className="section_subtitle reveal">My Professional Journey</span>
 
             <div className="experience_container container">
                 {experiences.map((exp, index) => (
-                    <div key={index} className="experience_card">
+                    <div key={index} className="experience_card reveal">
                         <div className="experience_header">
                             <h3 className="experience_company">{exp.company}</h3>
                             <span className="experience_type">{exp.type}</span>
@@ -73,7 +99,9 @@ const Experience = () => {
                                     </div>
                                     <div className="experience_content">
                                         <h4 className="experience_title">{role.title}</h4>
-                                        <span className="experience_period">{role.period} · {role.duration}</span>
+                                        <span className="experience_period">
+                                            {role.startDate} - {role.endDate} · {calculateDuration(role.startDate, role.endDate)}
+                                        </span>
                                         {role.skills.length > 0 && (
                                             <div className="experience_skills">
                                                 {role.skills.slice(0, 3).map((skill, i) => (
