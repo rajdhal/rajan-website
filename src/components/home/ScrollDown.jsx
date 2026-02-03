@@ -7,7 +7,7 @@ const ScrollDown = () => {
         <svg
           width="32px"
           height="32px"
-          class="home__scroll-mouse"
+          className="home__scroll-mouse"
           viewBox="0 0 247 390"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const ScrollDown = () => {
           }}
         >
           <path
-            class="wheel"
+            className="wheel"
             d="M123.359,79.775l0,72.843"
             style={{
               fill: "none",
@@ -39,8 +39,8 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <span class="home_scroll-name">Scroll Down To Learn More</span>
-        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+        <span className="home_scroll-name">Scroll Down To Learn More</span>
+        <i className="uil uil-arrow-down home_scroll-arrow"></i>
       </a>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./about.css";
 import ProfileImage from "../../assets/me.webp";
 import Info from "./Info";
-import Resume from "../../assets/Rajan Resume.pdf";
+import Resume from "../../assets/rajan-resume.pdf";
 
 const About = () => {
   const [showResume, setShowResume] = useState(false);
@@ -79,7 +79,7 @@ const About = () => {
           <div className="about_buttons">
             <button onClick={openResume} className="button button--flex">
               <span className="button-content">
-                Rajan's Resume <i className="uil uil-file-alt"></i>
+                My Resume <i className="uil uil-file-alt"></i>
               </span>
             </button>
 
@@ -132,7 +132,7 @@ const About = () => {
               src={resumeDownloadUrl}
               className="resume-iframe"
               allowFullScreen
-              title="Rajan's Resume"
+              title="My Resume"
             ></iframe>
           </div>
         </div>
