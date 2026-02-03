@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./about.css";
-import ProfileImage from "../../assets/me.JPEG";
+import ProfileImage from "../../assets/me.webp";
 import Info from "./Info";
 import Resume from "../../assets/Rajan Resume.pdf";
 

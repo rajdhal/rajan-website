@@ -1,7 +1,7 @@
-import image1 from "../../assets/trOCR.png";
-import image2 from "../../assets/Notetake.png";
-import websiteLight from "../../assets/websiteLight.png";
-import websiteDark from "../../assets/websiteDark.png";
+import image1 from "../../assets/trOCR.webp";
+import image2 from "../../assets/Notetake.webp";
+import websiteLight from "../../assets/websiteLight.webp";
+import websiteDark from "../../assets/websiteDark.webp";
 
 export const projects = [
   {
