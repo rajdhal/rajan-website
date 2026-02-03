@@ -68,13 +68,37 @@
 /* Medium Screens: Tablets and Below */
 @media screen and (max-width: 768px) {
   .header {
+    position: fixed;
     top: initial;
     bottom: 0;
+    left: 0;
+    right: 0;
     padding-bottom: env(safe-area-inset-bottom, 0);
   }
 
   .nav {
     height: var(--header-height);
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .nav_toggle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav_logo {
+    z-index: 1;
+  }
+
+  .nav_theme {
+    position: absolute;
+    right: 10%;
+    z-index: 1;
   }
 
   .nav_menu {
