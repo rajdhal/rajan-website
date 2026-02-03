@@ -79,7 +79,7 @@ const About = () => {
           <div className="about_buttons">
             <button onClick={openResume} className="button button--flex">
               <span className="button-content">
-                My Resume <i className="uil uil-file-alt"></i>
+                Resume <i className="uil uil-file-alt"></i>
               </span>
             </button>
 
