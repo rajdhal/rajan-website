@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
@@ -36,5 +37,10 @@ const Home = ({ onEasterEgg }) => {
     </section>
   );
 };
+
+Home.propTypes = {
+  onEasterEgg: PropTypes.func.isRequired,
+};
+
 
 export default Home;
